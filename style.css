@@ -1,0 +1,129 @@
+body {
+  background-color: #2a9d8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #8ecae6;
+  border: 2px solid #14213d;
+  padding: 20px 50px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div {
+  border-bottom: 2px solid #14213d;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.div.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px 20px;
+  padding: 20px;
+}
+input {
+  border-radius: 8px;
+  border: 2px solid #457b9d;
+  font-size: 1em;
+}
+.label {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+p {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+.select {
+  background-color: rgb(167, 255, 214);
+  display: flex;
+  flex: 1 2;
+  max-width: 400px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  height: 50px;
+  width: 100px;
+  align-self: center;
+  margin: 20px 20px;
+  border: 2px solid #ff8c3a;
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+button:hover,
+button:focus {
+  border-color: #f1ff5c;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+  transform: translateY(-0.3em);
+  cursor: pointer;
+}
+
+@media (max-width: 880px) {
+  .main {
+    flex-direction: column;
+  }
+  .div {
+    flex-direction: column;
+  }
+  .div.radio {
+    flex-direction: column;
+  }
+  .select {
+    flex-direction: column;
+  }
+}
+@media (max-width: 554px) {
+  body {
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .label {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .div.radio {
+    padding: 0;
+  }
+  .select {
+    font-size: 1em;
+  }
+}
